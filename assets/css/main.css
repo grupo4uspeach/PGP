@@ -75,7 +75,7 @@
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .form-row .name {
@@ -226,6 +226,15 @@ button {
   border: none;
 }
 
+.forgot-password {
+  font-size: 12px;
+  width: 100%;
+  float: right;
+  text-decoration: underline;
+  color: #08aeea;
+  margin-top: 5px;
+}
+
 /* ==========================================================================
    #PAGE WRAPPER
    ========================================================================== */
@@ -365,6 +374,10 @@ h6 {
   margin-bottom: 55px;
 }
 
+.m-b-35 {
+  margin-bottom: 35px;
+}
+
 /* ==========================================================================
    #WRAPPER
    ========================================================================== */
@@ -407,7 +420,7 @@ h6 {
    ========================================================================== */
 .btn {
   display: inline-block;
-  line-height: 50px;
+  line-height: 40px;
   padding: 0 50px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -419,6 +432,9 @@ h6 {
   font-weight: 700;
   color: #fff;
   font-family: inherit;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btn--radius {
@@ -474,7 +490,7 @@ h6 {
 }
 
 .btn--finaly {
-  margin: 40px 10px;
+  margin: 30px 10px;
 }
 
 /* ==========================================================================
@@ -803,8 +819,7 @@ input {
 }
 
 .card-5 .card-body {
-  padding: 20px 60px;
-  padding-bottom: 35px;
+  padding: 15px 50px;
 }
 
 @media (max-width: 767px) {
@@ -888,4 +903,12 @@ table .td-img{
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right{
+  text-align: right;
 }
