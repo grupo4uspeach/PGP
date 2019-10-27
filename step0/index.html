@@ -4,44 +4,133 @@ layout: default
 
 {% include header.html %}
 <div class="page-wrapper bg-sol-1 p-t-45 p-b-50">
+  <div class="wrapper wrapper--w960 p-b-50">
+    <div class="card card-5">
+      <div class="card-heading">
+        <h2 class="title2">Encontrar avaliações:</h2>
+      </div>
+      <div class="card-body">
+        <form method="POST">
+          <div class="form-row">
+            <div class="value search">
+              <div class="input-group">
+                <input
+                  class="input--style-5"
+                  type="text"
+                  name="company"
+                  placeholder="Busque por: Nome ou Email corporativo"
+                />
+                <a href="/result-list/" class="btn btn--radius-2 btn--red--border btn--search" title="Pesquisar"> 
+                  Pesquisar
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <div class="wrapper wrapper--w960">
     <div class="card card-5">
-      
       <div class="card-heading">
         <h2 class="title2">Continue avaliando:</h2>
       </div>
-
       <div class="card-body">
         <table style="width:100%">
-            <tbody>
+          <tbody>
             <tr>
               <td>Mario Luiz Gustavo</td>
-              
+              <td>mario@empresa.com</td>
+              <td>Desenvolvedor Frontend</td>
               <td class="td-img">
-                <img src="/assets/img/download.svg" title="Fazer download da avaliação">
+                <a href="/download/">
+                  <img
+                    src="/assets/img/download.svg"
+                    title="Fazer download da avaliação"
+                  />
+                </a>
               </td>
 
               <td class="td-img">
-                <img src="/assets/img/continue.svg" title="Continuar a avaliação">
+                <a href="/step3/">
+                  <img
+                    src="/assets/img/continue.svg"
+                    title="Continuar a avaliação"
+                  />
+                </a>
               </td>
 
               <td class="td-img">
-                <img src="/assets/img/close.svg" title="Cancelar a avaliação">
+                <img src="/assets/img/close.svg" title="Cancelar a avaliação" />
               </td>
             </tr>
+
             <tr>
               <td>Joana Marcia da Silva</td>
-              
+              <td>joanamarcia@empresa.com</td>
+              <td>Desenvolvedora Backend</td>
               <td class="td-img">
-                <img src="/assets/img/download.svg" title="Fazer download da avaliação">
-              </td>
-              
-              <td class="td-img">
-                <img src="/assets/img/continue.svg" title="Continuar a avaliação">
+                <a href="/download/">
+                  <img
+                    src="/assets/img/download.svg"
+                    title="Fazer download da avaliação"
+                  />
+                </a>
               </td>
 
               <td class="td-img">
-                <img src="/assets/img/close.svg" title="Cancelar a avaliação">
+                <a href="/step2/">
+                  <img
+                    src="/assets/img/continue.svg"
+                    title="Continuar a avaliação"
+                  />
+                </a>
+              </td>
+
+              <td class="td-img">
+                <img src="/assets/img/close.svg" title="Cancelar a avaliação" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper wrapper--w960 p-t-45">
+    <div class="card card-5">
+      <div class="card-heading">
+        <h2 class="title2">Ultimos avaliados por você:</h2>
+      </div>
+      <div class="card-body">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td>Sandra Maria Pereira</td>
+              <td>spereira@empresa.com</td>
+              <td>Gerente</td>
+              <td class="td-img">
+                <a href="/download/">
+                  <img
+                    src="/assets/img/download.svg"
+                    title="Fazer download da avaliação"
+                  />
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Marta Nascimento Vidal</td>
+              <td>martan@empresa.com</td>
+              <td>Desenvolvedora Backend</td>
+              <td class="td-img">
+                <a href="/download/">
+                  <img
+                    src="/assets/img/download.svg"
+                    title="Fazer download da avaliação"
+                  />
+                </a>
               </td>
             </tr>
           </tbody>

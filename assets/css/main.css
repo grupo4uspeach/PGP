@@ -493,6 +493,10 @@ h6 {
   margin: 30px 10px;
 }
 
+.btn--search {
+  margin: 15px 0 0 0;
+}
+
 /* ==========================================================================
    #DATE PICKER
    ========================================================================== */
@@ -787,6 +791,27 @@ input {
   padding: 0 20px;
 }
 
+.title3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  color: #000;
+  padding: 0 0 15px 0;
+}
+
+.question {
+  padding: 0 20px;
+}
+
+.explanation {
+  padding: 0 20px;
+  margin-top: 15px;
+}
+
+hr {
+  margin: 10px 0;
+}
 /* ==========================================================================
    #CARD
    ========================================================================== */
@@ -808,7 +833,7 @@ input {
 }
 
 .card-5 .card-heading {
-  padding: 20px 0;
+  padding: 20px 0 5px;
   background: #fff;
   -webkit-border-top-left-radius: 10px;
   -moz-border-radius-topleft: 10px;
@@ -819,7 +844,7 @@ input {
 }
 
 .card-5 .card-body {
-  padding: 15px 50px;
+  padding: 15px 30px;
 }
 
 @media (max-width: 767px) {
@@ -897,6 +922,12 @@ table .td-img{
   font-size: 18px;
 }
 
+.header p img {
+  width: 30px;
+  vertical-align: center;
+  margin-left: 8px;
+}
+
 /* ==========================================================================
    #config
    ========================================================================== */
@@ -911,4 +942,9 @@ table .td-img{
 
 .right{
   text-align: right;
+}
+
+.form-row .value.search {
+  width: 100%;
+  text-align: center;
 }

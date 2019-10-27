@@ -1,0 +1,240 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Impressão de avaliação</title>
+    <style type="text/css">
+      .label {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .linha {
+        border-top: 2px #000 solid;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .underline {
+        border-bottom: 1px #000 solid;
+      }
+
+      .sign {
+        width: 100%;
+      }
+
+      .rodape {
+        font-size: 8px;
+      }
+
+      sup {
+        font-size: 12px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      * {
+        font-size: 16px;
+      }
+
+      .head {
+        margin-top: 10px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      @media only screen {
+        table {
+          width: 100%;
+        }
+
+        .div-page {
+          max-width: 900px;
+          margin: auto;
+        }
+
+        .premio {
+          padding-bottom: 50px;
+          border-bottom: 10px #000 solid;
+        }
+
+        .head {
+          margin-top: 50px;
+        }
+
+        .rodape-fixo,
+        .cabecalho-segunda-page {
+          display: none;
+        }
+      }
+
+      @media only print {
+        .div-page {
+          max-width: 100%;
+          margin: auto;
+        }
+
+        .rodape-fixo,
+        .cabecalho-segunda-page {
+          display: inline;
+        }
+
+        .rodape-fixo {
+          position: fixed;
+          bottom: 0;
+          border-top: 2px #000 double;
+          width: 100%;
+          border-width: 7px;
+        }
+      }
+    </style>
+  </head>
+
+  <body onload="window.print()">
+    <div class="div-page" style="page-break-after: always">
+      <table width="100%">
+        <thead>
+          <tr>
+            <th
+              class="linha"
+              style="border-bottom: 2px #000 solid;border-top: 0;"
+            >
+              <h1
+                style="margin: 0; font-size: 20px; text-transform: uppercase; "
+              >
+                Avaliação 360º
+              </h1>
+            </th>
+          </tr>
+          <tr class="rodape-fixo">
+            <td class="rodape" width="100%">
+              Avaliação 360º
+            </td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <tr>
+                  <td>
+                    <span class="label">DESEMPENHO</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <!-- TODO Duplicar aqui e colocar as perguntas e respostas simulando 1 avaliacao feita -->
+                <tr>
+                  <td>
+                    <span class="label">pergunta </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    resposta
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <tr>
+                  <td>
+                    <span class="label">POSTURA</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <!-- TODO Duplicar aqui e colocar as perguntas e respostas simulando 1 avaliacao feita -->
+                <tr>
+                  <td>
+                    <span class="label">1) pergunta </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    resposta
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <tr>
+                  <td>
+                    <span class="label">TRABALHO EM EQUIPE</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <!-- TODO Duplicar aqui e colocar as perguntas e respostas simulando 1 avaliacao feita -->
+                <tr>
+                  <td>
+                    <span class="label">pergunta </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    resposta
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <tr>
+                  <td>
+                    <span class="label">REGRAS/CULTURA DA EMPRESA</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="linha">
+              <table width="100%">
+                <!-- TODO Duplicar aqui e colocar as perguntas e respostas simulando 1 avaliacao feita -->
+                <tr>
+                  <td>
+                    <span class="label">pergunta </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    resposta
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
