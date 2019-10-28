@@ -4,56 +4,404 @@ layout: default
 
 {% include header.html %}
 <div class="page-wrapper bg-sol-1 p-t-45 p-b-50">
-
   <div class="wrapper wrapper--w960">
     <div class="card card-5">
       <div class="card-heading">
         <h2 class="title2">Trabalho em equipe</h2>
+        <p class="explanation">
+          Com relação a forma de trabalhar em equipe do Colaborador em
+          Avaliação, responda as seguintes perguntas:
+        </p>
       </div>
       <div class="card-body">
         <form method="POST">
-          <div class="form-row m-b-35">
-            <div class="name">Name*</div>
-            <div class="value">
-              <div class="row row-space">
-                <div class="col-2">
-                  <div class="input-group-desc">
-                    <input
-                      class="input--style-5"
-                      type="text"
-                      name="first_name"
-                    />
-                    <label class="label--desc">Primeiro nome</label>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="input-group-desc">
-                    <input
-                      class="input--style-5"
-                      type="text"
-                      name="last_name"
-                    />
-                    <label class="label--desc">Sobrename</label>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="">
+            <p class="label-question">
+              O quão proativo é o colaborador?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Muito</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span>Moderado</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Pouco </span></label
+                >
+              </li>
+            </ul>
           </div>
-          <div class="form-row">
-            <div class="name">Cargo*</div>
-            <div class="value">
-              <div class="input-group">
-                <input class="input--style-5" type="text" name="company" />
-              </div>
-            </div>
+
+          <div class="">
+            <p class="label-question">
+              O quão comunicativo é o colaborador?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Muito</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span>Moderado</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Pouco </span></label
+                >
+              </li>
+            </ul>
           </div>
-          <div class="form-row">
-            <div class="name">Email</div>
-            <div class="value">
-              <div class="input-group">
-                <input class="input--style-5" type="email" name="email" />
-              </div>
-            </div>
+
+          <div class="">
+            <p class="label-question">
+              Quanto colabora com a equipe?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Muito</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span>Moderado</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Pouco </span></label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <p class="label-question">
+              Como se relaciona com as pessoas no geral?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Quase sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Às vezes bem, outras vezes mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Quase sempre mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Sempre mal </span></label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <p class="label-question">
+              Como trata seus superiores na equipe?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Quase sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Às vezes bem, outras vezes mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Quase sempre mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Sempre mal </span></label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <p class="label-question">
+              Como trata seus colegas do mesmo nível hierárquico na equipe?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Quase sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Às vezes bem, outras vezes mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Quase sempre mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Sempre mal </span></label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <p class="label-question">
+              Como trata seus subordinados na equipe?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Quase sempre bem </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Às vezes bem, outras vezes mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Quase sempre mal </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Sempre mal </span></label
+                >
+              </li>
+            </ul>
           </div>
         </form>
       </div>
@@ -64,51 +412,271 @@ layout: default
     <div class="card card-5">
       <div class="card-heading">
         <h2 class="title2">Cultura da empresa</h2>
+        <p class="explanation">
+          Com relação à adequação às regras e à cultura da empresa pelo
+          Colaborador em Avaliação, responda as seguintes perguntas:
+        </p>
       </div>
       <div class="card-body">
         <form method="POST">
-          <div class="form-row m-b-35">
-            <div class="name">Name*</div>
-            <div class="value">
-              <div class="row row-space">
-                <div class="col-2">
-                  <div class="input-group-desc">
-                    <input
-                      class="input--style-5"
-                      type="text"
-                      name="first_name"
-                    />
-                    <label class="label--desc">Primeiro nome</label>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="input-group-desc">
-                    <input
-                      class="input--style-5"
-                      type="text"
-                      name="last_name"
-                    />
-                    <label class="label--desc">Sobrename</label>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="">
+            <p class="label-question">
+              Com que frequência o colaborador respeita as normas da empresa?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Sempre</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Na maioria das vezes </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Algumas vezes </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span> Poucas vezes </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Nunca </span></label
+                >
+              </li>
+            </ul>
           </div>
-          <div class="form-row">
-            <div class="name">Cargo*</div>
-            <div class="value">
-              <div class="input-group">
-                <input class="input--style-5" type="text" name="company" />
-              </div>
-            </div>
+
+          <div class="">
+            <p class="label-question">
+              Costuma cuidar bem do patrimônio da empresa?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Sempre</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Na maioria das vezes </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Algumas vezes </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span> Poucas vezes </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Nunca </span></label
+                >
+              </li>
+            </ul>
           </div>
-          <div class="form-row">
-            <div class="name">Email</div>
-            <div class="value">
-              <div class="input-group">
-                <input class="input--style-5" type="email" name="email" />
-              </div>
-            </div>
+
+          <div class="">
+            <p class="label-question">
+              Qual o nível de adaptação do colaborador à cultura da empresa?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Totalmente adaptado</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Bastante adaptado </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Moderadamente adaptado </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span> Pouco adaptado </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Nada adaptado </span></label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <p class="label-question">
+              Veste-se adequadamente à cultura da empresa?
+            </p>
+            <ul class="radio-list">
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="0"
+                    name="input-field"
+                    value="0"
+                    class="input-field"
+                  />
+                  <span>Sempre</span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline">
+                  <input
+                    type="radio"
+                    data-id="1"
+                    name="input-field"
+                    value="1"
+                    class="input-field"
+                  />
+                  <span> Quase sempre </span>
+                </label>
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Algumas vezes </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span> Quase nunca </span></label
+                >
+              </li>
+              <li class="">
+                <label class="radio inline"
+                  ><input
+                    type="radio"
+                    data-id="2"
+                    name="input-field"
+                    value="2"
+                    class="input-field"
+                  /><span>Nunca </span></label
+                >
+              </li>
+            </ul>
           </div>
         </form>
       </div>
@@ -122,9 +690,9 @@ layout: default
         class="btn btn--radius-2 btn--red--border btn--finaly"
         title="Voltar para a etapa anterior"
       >
-         << Voltar
+        << Voltar
       </a>
-        <a
+      <a
         href="/"
         class="btn btn--radius-2 btn--red--border btn--finaly"
         title="Salve o que você já preencheu e continue depois"

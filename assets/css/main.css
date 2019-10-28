@@ -508,6 +508,18 @@ input[type="date" i] {
   padding: 14px;
 }
 
+.radio-list input{
+  width: auto
+}
+
+.radio-list {
+  list-style-type: none;
+}
+
+.radio-list li {
+  margin: 10px
+}
+
 .table-condensed td, .table-condensed th {
   font-size: 14px;
   font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
@@ -807,6 +819,14 @@ input {
 .explanation {
   padding: 0 20px;
   margin-top: 15px;
+}
+
+.label-question {
+  margin-top: 15px;
+  width: 100%;
+  color: #555;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 hr {
