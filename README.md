@@ -2,6 +2,9 @@
 
 A idéia do projeto é construir o frontend do sistema.
 
+## Instalação Bundle
+1. `$bundle install` 
+
 ## Instalação do projeto com Jekyll
 1. `$ gem install jekyll bundler` 
 
