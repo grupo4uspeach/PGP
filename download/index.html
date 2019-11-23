@@ -1,429 +1,524 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Impressão de avaliação</title>
-    <style type="text/css">
-      .label {
-        font-weight: bold;
-        font-size: 16px;
-      }
 
-      .linha {
-        border-top: 2px #000 solid;
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
+<head runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Impressão de avaliação</title>
+  <style type="text/css">
+    .label {
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-      .underline {
-        border-bottom: 1px #000 solid;
-      }
+    .linha {
+      border-top: 2px #000 solid;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
 
-      .sign {
+    .underline {
+      border-bottom: 1px #000 solid;
+    }
+
+    .sign {
+      width: 100%;
+    }
+
+    .rodape {
+      font-size: 8px;
+    }
+
+    sup {
+      font-size: 12px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    * {
+      font-size: 16px;
+    }
+
+    .head {
+      margin-top: 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    @media only screen {
+      table {
         width: 100%;
       }
 
-      .rodape {
-        font-size: 8px;
+      .div-page {
+        max-width: 900px;
+        margin: auto;
       }
 
-      sup {
-        font-size: 12px;
-      }
-
-      p {
-        margin: 0;
-      }
-
-      * {
-        font-size: 16px;
+      .premio {
+        padding-bottom: 50px;
+        border-bottom: 10px #000 solid;
       }
 
       .head {
-        margin-top: 10px;
+        margin-top: 50px;
       }
 
-      .center {
-        text-align: center;
+      .rodape-fixo,
+      .cabecalho-segunda-page {
+        display: none;
+      }
+    }
+
+    @media only print {
+      .div-page {
+        max-width: 100%;
+        margin: auto;
       }
 
-      @media only screen {
-        table {
-          width: 100%;
-        }
-
-        .div-page {
-          max-width: 900px;
-          margin: auto;
-        }
-
-        .premio {
-          padding-bottom: 50px;
-          border-bottom: 10px #000 solid;
-        }
-
-        .head {
-          margin-top: 50px;
-        }
-
-        .rodape-fixo,
-        .cabecalho-segunda-page {
-          display: none;
-        }
+      .rodape-fixo,
+      .cabecalho-segunda-page {
+        display: inline;
       }
 
-      @media only print {
-        .div-page {
-          max-width: 100%;
-          margin: auto;
-        }
-
-        .rodape-fixo,
-        .cabecalho-segunda-page {
-          display: inline;
-        }
-
-        .rodape-fixo {
-          position: fixed;
-          bottom: 0;
-          border-top: 2px #000 double;
-          width: 100%;
-          border-width: 7px;
-        }
+      .rodape-fixo {
+        position: fixed;
+        bottom: 0;
+        border-top: 2px #000 double;
+        width: 100%;
+        border-width: 7px;
       }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body onload="window.print()">
-    <div class="div-page" style="page-break-after: always">
-      <table width="100%">
-        <thead>
-          <tr>
-            <th
-              class="linha"
-              style="border-bottom: 2px #000 solid;border-top: 0;"
-            >
-              <h1
-                style="margin: 0; font-size: 20px; text-transform: uppercase; "
-              >
-                Avaliação 360º
-              </h1>
-            </th>
-          </tr>
-          <tr class="rodape-fixo">
-            <td class="rodape" width="100%">
+<body onload="window.print()">
+  <div class="div-page" style="page-break-after: always">
+    <table width="100%">
+      <thead>
+        <tr>
+          <th class="linha" style="border-bottom: 2px #000 solid;border-top: 0;">
+            <h1 style="margin: 0; font-size: 20px; text-transform: uppercase; ">
               Avaliação 360º
-            </td>
-          </tr>
-        </thead>
+            </h1>
+          </th>
+        </tr>
+        <tr class="rodape-fixo">
+          <td class="rodape" width="100%">
+            Avaliação 360º
+          </td>
+        </tr>
+      </thead>
 
-        <tbody>
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">DESEMPENHO</span>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">
-                      1) Cumpre os prazos de maneira satisfatória?
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Sempre
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">
-                      2) Como o colaborador impacta nos custos dos projetos que
-                      está envolvido?
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Positivamente, na maioria das vezes suas ações tem como
-                    consequência sua diminuição
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">
-                      3) Qual é a qualidade do trabalho desempenhado?
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Boa
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+      <tbody>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">DESEMPENHO</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">
+                    1) Cumpre os prazos de maneira satisfatória?
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sempre
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">
+                    2) Como o colaborador impacta nos custos dos projetos que
+                    está envolvido?
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Positivamente, na maioria das vezes suas ações tem como
+                  consequência sua diminuição
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">
+                    3) Qual é a qualidade do trabalho desempenhado?
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Boa
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">
-                      4) Qual é a quantidade de entregas previstas que o
-                      colaborador cumpre?
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    A maioria
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">
+                    4) Qual é a quantidade de entregas previstas que o
+                    colaborador cumpre?
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  A maioria
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">POSTURA</span>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">1) Falta com qual frequência? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Nunca
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label"
-                      >2) Na maior parte do tempo, linguagem está em
-                      conformidade com o ambiente de trabalho?
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Sim
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">3) É pontual? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Sempre
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">4) Como lida com pressão? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Muito bem
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label"
-                      >5) Qual é o grau de aceitação a desafios?
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Alto
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">6) Quão bem resolve problemas? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Muito bem
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">
+                    5) O colaborador cumpre as metas?
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sempre
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
 
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">TRABALHO EM EQUIPE</span>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label"> 1) O quão proativo é o colaborador? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Muito
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">2) O quão comunicativo é o colaborador? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Muito
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">3) Quanto colabora com a equipe? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Muito
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">4)Como se relaciona com as pessoas no geral? </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                   Sempre bem
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">POSTURA</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">1) Falta com qual frequência? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Nunca
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">2) Na maior parte do tempo, linguagem está em
+                    conformidade com o ambiente de trabalho?
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sim
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">3) É pontual? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sempre
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">4) Como lida com pressão? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Muito bem
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">5) Qual é o grau de aceitação a desafios?
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Alto
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">6) Quão bem resolve problemas? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Muito bem
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <tr>
-                  <td>
-                    <span class="label">REGRAS/CULTURA DA EMPRESA</span>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td class="linha">
-              <table width="100%">
-                <!-- TODO Duplicar aqui e colocar as perguntas e respostas simulando 1 avaliacao feita -->
-                <tr>
-                  <td>
-                    <span class="label">pergunta </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    resposta
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">TRABALHO EM EQUIPE</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label"> 1) O quão proativo é o colaborador? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Muito
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">2) O quão comunicativo é o colaborador? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Muito
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">3) Quanto colabora com a equipe? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Muito
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">4)Como se relaciona com as pessoas no geral? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sempre bem
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">REGRAS/CULTURA DA EMPRESA</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">Com que frequência o colaborador respeita as normas da empresa? </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Na maioria das vezes
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">Costuma cuidar bem do patrimônio da empresa?</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Na maioria das vezes
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">Qual o nível de adaptação do colaborador à cultura da empresa?</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Totalmente adaptado
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">Veste-se adequadamente à cultura da empresa?</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sempre
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">Qual o nível de compreensão e respeito do colaborador em relação à missão da
+                    empresa?</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Muito bom
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="linha">
+            <table width="100%">
+              <tr>
+                <td>
+                  <span class="label">Qual o nível de compreensão e respeito do colaborador em relação à visão da
+                    empresa?</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Muito bom
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
 </html>
